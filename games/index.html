@@ -10,7 +10,6 @@
     body { font-family: 'Poppins', sans-serif; }
   </style>
 </head>
-<!-- Using flex and flex-col so footer stays at bottom -->
 <body class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-100 min-h-screen flex flex-col">
   <!-- Navbar with glassmorphism -->
   <nav class="fixed w-full bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-700/50">
@@ -30,88 +29,96 @@
 
   <!-- Main Content Area -->
   <main class="pt-24 pb-12 flex-grow">
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-3xl mx-auto px-4">
       <h2 class="text-2xl font-semibold mb-8 pl-4 border-l-4 border-indigo-500">All Available Games</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div class="flex flex-col gap-6">
         <!-- Game Card: Football Legends 2021 -->
-        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl">
-          <img src="logos/footyleglogo.jpeg" alt="Football Legends 2021" class="w-full h-48 object-cover object-center rounded-t-xl" />
-          <div class="p-4 text-center">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-3">Football Legends 2021</h3>
+        <div class="flex items-center bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition hover:shadow-xl">
+          <img src="logos/footyleglogo.jpeg" alt="Football Legends 2021" class="w-24 h-24 object-cover object-center rounded-l-xl flex-shrink-0" />
+          <div class="p-4 flex-1">
+            <h3 class="text-xl font-semibold text-indigo-400 mb-1">Football Legends 2021</h3>
+            <p class="text-gray-300 text-sm mb-2">Play as legendary footballers in this fast-paced soccer game.</p>
             <a href="football-legends2021" class="inline-block px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-500">Play Now</a>
           </div>
         </div>
         <!-- Game Card: Block Blast -->
-        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl">
-          <img src="logos/blockblast.png" alt="Block Blast" class="w-full h-48 object-cover object-center rounded-t-xl" />
-          <div class="p-4 text-center">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-3">Block Blast</h3>
+        <div class="flex items-center bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition hover:shadow-xl">
+          <img src="logos/blockblast.png" alt="Block Blast" class="w-24 h-24 object-cover object-center rounded-l-xl flex-shrink-0" />
+          <div class="p-4 flex-1">
+            <h3 class="text-xl font-semibold text-indigo-400 mb-1">Block Blast</h3>
+            <p class="text-gray-300 text-sm mb-2">Clear blocks and rack up points in this addictive puzzle game.</p>
             <a href="blockblast" class="inline-block px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-500">Play Now</a>
           </div>
         </div>
         <!-- Game Card: Basketball SuperStars -->
-        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl">
-          <img src="logos/bballstars.png" alt="Basketball SuperStars" class="w-full h-48 object-cover object-center rounded-t-xl" />
-          <div class="p-4 text-center">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-3">Basketball SuperStars</h3>
+        <div class="flex items-center bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition hover:shadow-xl">
+          <img src="logos/bballstars.png" alt="Basketball SuperStars" class="w-24 h-24 object-cover object-center rounded-l-xl flex-shrink-0" />
+          <div class="p-4 flex-1">
+            <h3 class="text-xl font-semibold text-indigo-400 mb-1">Basketball SuperStars</h3>
+            <p class="text-gray-300 text-sm mb-2">Show off your basketball skills in this action-packed game.</p>
             <a href="BasketballStars" class="inline-block px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-500">Play Now</a>
           </div>
         </div>
-        <!-- Game Card: Clumsy Bird - Flappy Bird Clone -->
-        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl">
-          <img src="logos/flappybird.png" alt="Clumsy Bird" class="w-full h-48 object-cover object-center rounded-t-xl" />
-          <div class="p-4 text-center">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-3">Flappy Bird</h3>
+        <!-- Game Card: Flappy Bird -->
+        <div class="flex items-center bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition hover:shadow-xl">
+          <img src="logos/flappybird.png" alt="Clumsy Bird" class="w-24 h-24 object-cover object-center rounded-l-xl flex-shrink-0" />
+          <div class="p-4 flex-1">
+            <h3 class="text-xl font-semibold text-indigo-400 mb-1">Flappy Bird</h3>
+            <p class="text-gray-300 text-sm mb-2">Guide the bird through pipes in this classic endless runner.</p>
             <a href="flappybird" class="inline-block px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-500">Play Now</a>
           </div>
         </div>
         <!-- Game Card: Pacman -->
-        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl">
-          <img src="logos/pacman.jpeg" alt="Pacman" class="w-full h-48 object-cover object-center rounded-t-xl" />
-          <div class="p-4 text-center">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-3">Pacman</h3>
+        <div class="flex items-center bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition hover:shadow-xl">
+          <img src="logos/pacman.jpeg" alt="Pacman" class="w-24 h-24 object-cover object-center rounded-l-xl flex-shrink-0" />
+          <div class="p-4 flex-1">
+            <h3 class="text-xl font-semibold text-indigo-400 mb-1">Pacman</h3>
+            <p class="text-gray-300 text-sm mb-2">Eat all the dots and avoid ghosts in this arcade classic.</p>
             <a href="https://aal3-33.github.io/Pacman" class="inline-block px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-500">Play Now</a>
           </div>
         </div>
-        <!-- Game Card: Basketball SuperStars -->
-        <!-- Duplicate card removed if any -->
         <!-- Game Card: Moto X3M -->
-        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl">
-          <img src="logos/motox3m.png" alt="Moto X3M" class="w-full h-48 object-cover object-center rounded-t-xl" />
-          <div class="p-4 text-center">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-3">Moto X3M</h3>
+        <div class="flex items-center bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition hover:shadow-xl">
+          <img src="logos/motox3m.png" alt="Moto X3M" class="w-24 h-24 object-cover object-center rounded-l-xl flex-shrink-0" />
+          <div class="p-4 flex-1">
+            <h3 class="text-xl font-semibold text-indigo-400 mb-1">Moto X3M</h3>
+            <p class="text-gray-300 text-sm mb-2">Race your bike through challenging obstacle courses.</p>
             <a href="https://aal3-33.github.io/motox3m" class="inline-block px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-500">Play Now</a>
           </div>
         </div>
         <!-- Game Card: Fruit Merger -->
-        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl">
-          <img src="logos/fruitmerger.png" alt="Fruit Merger" class="w-full h-48 object-cover object-center rounded-t-xl" />
-          <div class="p-4 text-center">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-3">Fruit Merger</h3>
+        <div class="flex items-center bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition hover:shadow-xl">
+          <img src="logos/fruitmerger.png" alt="Fruit Merger" class="w-24 h-24 object-cover object-center rounded-l-xl flex-shrink-0" />
+          <div class="p-4 flex-1">
+            <h3 class="text-xl font-semibold text-indigo-400 mb-1">Fruit Merger</h3>
+            <p class="text-gray-300 text-sm mb-2">Merge fruits to create new ones and score big points.</p>
             <a href="fruitmerger" class="inline-block px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-500">Play Now</a>
           </div>
         </div>
         <!-- Game Card: OVO -->
-        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl">
-          <img src="logos/ovo.png" alt="OVO" class="w-full h-48 object-cover object-center rounded-t-xl" />
-          <div class="p-4 text-center">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-3">OVO</h3>
+        <div class="flex items-center bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition hover:shadow-xl">
+          <img src="logos/ovo.png" alt="OVO" class="w-24 h-24 object-cover object-center rounded-l-xl flex-shrink-0" />
+          <div class="p-4 flex-1">
+            <h3 class="text-xl font-semibold text-indigo-400 mb-1">OVO</h3>
+            <p class="text-gray-300 text-sm mb-2">Jump, slide, and dash through tricky platforming levels.</p>
             <a href="#" class="inline-block px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-500">Play Now</a>
           </div>
         </div>
         <!-- Game Card: Fruit Ninja -->
-        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl">
-          <img src="logos/fruitninja.jpeg" alt="Fruit Ninja" class="w-full h-48 object-cover object-center rounded-t-xl" />
-          <div class="p-4 text-center">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-3">Fruit Ninja</h3>
+        <div class="flex items-center bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition hover:shadow-xl">
+          <img src="logos/fruitninja.jpeg" alt="Fruit Ninja" class="w-24 h-24 object-cover object-center rounded-l-xl flex-shrink-0" />
+          <div class="p-4 flex-1">
+            <h3 class="text-xl font-semibold text-indigo-400 mb-1">Fruit Ninja</h3>
+            <p class="text-gray-300 text-sm mb-2">Slice fruit as fast as you can in this juicy arcade game.</p>
             <a href="FruitNinja" class="inline-block px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-500">Play Now</a>
           </div>
         </div>
         <!-- Game Card: Tiny Fishing -->
-        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl">
-          <img src="logos/tfishing.png" alt="Tiny Fishing" class="w-full h-48 object-cover object-center rounded-t-xl" />
-          <div class="p-4 text-center">
-            <h3 class="text-xl font-semibold text-indigo-400 mb-3">Tiny Fishing</h3>
+        <div class="flex items-center bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden transition hover:shadow-xl">
+          <img src="logos/tfishing.png" alt="Tiny Fishing" class="w-24 h-24 object-cover object-center rounded-l-xl flex-shrink-0" />
+          <div class="p-4 flex-1">
+            <h3 class="text-xl font-semibold text-indigo-400 mb-1">Tiny Fishing</h3>
+            <p class="text-gray-300 text-sm mb-2">Cast your line and catch as many fish as you can!</p>
             <a href="TinyFishing" class="inline-block px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-500">Play Now</a>
           </div>
         </div>
