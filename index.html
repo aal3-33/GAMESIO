@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Astron Games</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-100 min-h-screen">
+  <!-- Navbar with glassmorphism -->
+  <nav class="fixed w-full bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-700/50">
+    <div class="max-w-7xl mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
+          Astron Games
+        </a>
+        <div class="flex items-center space-x-8">
+          <a href="index.html" class="hover:text-indigo-400 transition-colors">Home</a>
+          <a href="about" class="hover:text-indigo-400 transition-colors">About</a>
+          <a href="games" class="hover:text-indigo-400 transition-colors">Games</a>
+          <a href="hwcheats" class="hover:text-indigo-400 transition-colors">Homework Cheats</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
+          Welcome to Astron Games
+        </h1>
+        <p class="text-xl text-gray-300">Experience the best browser games shit dump of Noah</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Games Slider -->
+  <section class="py-12 relative">
+    <div class="max-w-7xl mx-auto px-4 relative">
+      <h2 class="text-2xl font-semibold mb-8 pl-4 border-l-4 border-indigo-500">Featured Games</h2>
+      
+      <div class="overflow-hidden bg-gray-800/50 rounded-2xl backdrop-blur-sm border border-gray-700/50 relative">
+        <div id="sliderContainer" class="flex transition-transform duration-700 ease-in-out">
+          <!-- Slide 1 -->
+          <div class="w-full flex-shrink-0 p-8">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+              <div class="md:w-1/2 space-y-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
+                  OVO
+                </h2>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                  Race through the stunning obstacles of OvO in this epic endless runner! Dodge obstacles, get better, and reach new levels.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                  <a href="games/ovo" 
+                     class="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 transition-all transform hover:-translate-y-1">
+                    <span class="font-semibold">Play Now</span>
+                  </a>
+                  <a href="games" 
+                     class="inline-flex items-center px-6 py-3 rounded-lg border border-indigo-500 hover:bg-indigo-500/20 transition-all">
+                    <span>More Games</span>
+                  </a>
+                </div>
+              </div>
+              <div class="md:w-1/2 flex justify-center">
+                <div class="relative group">
+                  <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
+                  <img src="logos/ovo.png" alt="Subway Surfers" 
+                       class="relative w-[300px] h-[300px] rounded-lg shadow-2xl transform transition hover:scale-105">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="w-full flex-shrink-0 p-8">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+              <div class="md:w-1/2 space-y-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
+                  Football Legends
+                </h2>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                  Experience the thrill of football with these epic characters! Master special moves, score amazing goals, and become a legend.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                  <a href="https://aal3-33.github.io/games/Football-Legends" 
+                     class="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 transition-all transform hover:-translate-y-1">
+                    <span class="font-semibold">Play Now</span>
+                  </a>
+                  <a href="games" 
+                     class="inline-flex items-center px-6 py-3 rounded-lg border border-indigo-500 hover:bg-indigo-500/20 transition-all">
+                    <span>More Games</span>
+                  </a>
+                </div>
+              </div>
+              <div class="md:w-1/2 flex justify-center">
+                <div class="relative group">
+                  <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
+                  <img src="logos/footyleglogo.jpeg" alt="Football Legends" 
+                       class="relative w-[300px] h-[300px] rounded-lg shadow-2xl transform transition hover:scale-105">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="w-full flex-shrink-0 p-8">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+              <div class="md:w-1/2 space-y-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
+                  Basketball Stars
+                </h2>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                  Dominate the court in this action-packed basketball game! Show off your skills, challenge players, and become the ultimate star.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                  <a href="https://aal3-33.github.io/Basketballstars" 
+                     class="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 transition-all transform hover:-translate-y-1">
+                    <span class="font-semibold">Play Now</span>
+                  </a>
+                  <a href="games" 
+                     class="inline-flex items-center px-6 py-3 rounded-lg border border-indigo-500 hover:bg-indigo-500/20 transition-all">
+                    <span>More Games</span>
+                  </a>
+                </div>
+              </div>
+              <div class="md:w-1/2 flex justify-center">
+                <div class="relative group">
+                  <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
+                  <img src="logos/bballstars.png" alt="Basketball Stars" 
+                       class="relative w-[300px] h-[300px] rounded-lg shadow-2xl transform transition hover:scale-105">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Carousel Controls placed outside slider container to overlap text -->
+      <button id="prev" class="absolute top-1/2 left-[-40px] transform -translate-y-1/2 bg-gray-900/80 hover:bg-gray-800 text-white p-3 rounded-full backdrop-blur-sm border border-gray-700/50 transition-all">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+      </button>
+      <button id="next" class="absolute top-1/2 right-[-40px] transform -translate-y-1/2 bg-gray-900/80 hover:bg-gray-800 text-white p-3 rounded-full backdrop-blur-sm border border-gray-700/50 transition-all">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- Game Categories -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold mb-8 pl-4 border-l-4 border-indigo-500">Shits you can find here</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 hover:bg-gray-800/70 transition-all">
+          <h3 class="text-xl font-semibold mb-3">Games</h3>
+          <p class="text-gray-300">Ah yes the cure to your boredom and the solution to fail all exams</p>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 hover:bg-gray-800/70 transition-all">
+          <h3 class="text-xl font-semibold mb-3">Homework Bypasses</h3>
+          <p class="text-gray-300">Get an AI to do ur homework and another excellent way to fail exams</p>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 hover:bg-gray-800/70 transition-all">
+          <h3 class="text-xl font-semibold mb-3">Random Quotes</h3>
+          <p class="text-gray-300">People give out motivational quotes but as you spend more time on this site u get demotivational ones</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900/80 backdrop-blur-md border-t border-gray-700/50 py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <div class="flex items-center justify-center space-x-6">
+        <a href="index.html" class="text-gray-300 hover:text-indigo-400 transition-colors">Home</a>
+        <a href="about.html" class="text-gray-300 hover:text-indigo-400 transition-colors">About</a>
+        <a href="games.html" class="text-gray-300 hover:text-indigo-400 transition-colors">Games</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Sliding Carousel -->
+  <script>
+    let currentSlide = 0;
+    const sliderContainer = document.getElementById('sliderContainer');
+    const slides = document.querySelectorAll('#sliderContainer > div');
+    const totalSlides = slides.length;
+
+    function updateSlider() {
+      sliderContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    document.getElementById('prev').addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateSlider();
+    });
+
+    document.getElementById('next').addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlider();
+    });
+
+    // Auto-slide every 5 seconds
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlider();
+    }, 5000);
+  </script>
+</body>
+</html>
